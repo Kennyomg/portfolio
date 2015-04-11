@@ -1,0 +1,99 @@
+* {
+  -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+  -moz-box-sizing: border-box;    /* Firefox, other Gecko */
+  box-sizing: border-box;         /* Opera/IE 8+ */
+}
+
+html {
+  padding: 0px;
+  margin: 0px;
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  padding: 0px;
+  margin:0px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  height:100%;
+  background: url(/images/background.jpeg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+article, section, aside, hgroup, nav, header, footer, figure, figcaption {
+  display: block;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+p, h1 {
+  margin: 0px;
+  color: white;
+}
+
+header {
+  height:15%;
+  padding: 1.5%;
+}
+
+nav {
+  width: 100%;
+  height: 100%;
+}
+
+nav ul {
+  margin:0px;
+  padding:0px;
+  height:100%;
+}
+
+nav li {
+  display: inline-block;
+  padding: 0 0.8em;
+  margin: 0px 0.8em;
+  font-size: 30px;
+  box-shadow: 0px 0px 10px 1px black;
+  border-radius: 60px 60px 60px 60px;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+nav li:hover {
+  box-shadow: 0px 0px 10px 1px antiquewhite;
+  background-color: rgba(250, 235, 215, 0.5);
+}
+
+#content {
+  padding: 5px;
+  min-height:75%;
+  width:80%;
+  box-shadow: 0px 0px 10px 1px black;
+  border-radius: 0px 60px 60px 0px;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+#sidebar {
+  padding: 0px 100px;
+  height:75%;
+  width:20%;
+  position: fixed; 
+  right: 0;
+  top: 15%;
+}
+
+#sidebar section {
+  height: 100%;
+  width: 100%;
+  box-shadow: 0px 0px 10px 1px black;
+  border-radius: 60px 60px 60px 60px;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+footer {
+  height:10%;
+}

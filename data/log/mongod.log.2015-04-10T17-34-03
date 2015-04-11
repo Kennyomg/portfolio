@@ -1,0 +1,21 @@
+2015-04-10T10:37:33.377+0200 I CONTROL  Hotfix KB2731284 or later update is not installed, will zero-out data files
+2015-04-10T10:37:33.379+0200 I CONTROL  Trying to start Windows service 'MongoDB'
+2015-04-10T10:37:33.393+0200 I STORAGE  Service running
+2015-04-10T10:37:33.417+0200 I JOURNAL  [initandlisten] journal dir=c:\Users\Kenny\myapp\myapp\data\db\journal
+2015-04-10T10:37:33.417+0200 I JOURNAL  [initandlisten] recover : no journal files present, no recovery needed
+2015-04-10T10:37:33.530+0200 I JOURNAL  [durability] Durability thread started
+2015-04-10T10:37:33.531+0200 I JOURNAL  [journal writer] Journal writer thread started
+2015-04-10T10:37:33.795+0200 I CONTROL  [initandlisten] MongoDB starting : pid=35240 port=27017 dbpath=c:\Users\Kenny\myapp\myapp\data\db 64-bit host=Kenny-Laptop
+2015-04-10T10:37:33.795+0200 I CONTROL  [initandlisten] targetMinOS: Windows 7/Windows Server 2008 R2
+2015-04-10T10:37:33.796+0200 I CONTROL  [initandlisten] db version v3.0.2
+2015-04-10T10:37:33.796+0200 I CONTROL  [initandlisten] git version: 6201872043ecbbc0a4cc169b5482dcf385fc464f
+2015-04-10T10:37:33.796+0200 I CONTROL  [initandlisten] OpenSSL version: OpenSSL 1.0.1m-fips 19 Mar 2015
+2015-04-10T10:37:33.796+0200 I CONTROL  [initandlisten] build info: windows sys.getwindowsversion(major=6, minor=1, build=7601, platform=2, service_pack='Service Pack 1') BOOST_LIB_VERSION=1_49
+2015-04-10T10:37:33.796+0200 I CONTROL  [initandlisten] allocator: system
+2015-04-10T10:37:33.796+0200 I CONTROL  [initandlisten] options: { config: "C:\Program Files\MongoDB\Server\3.0\mongod.cfg", service: true, storage: { dbPath: "c:\Users\Kenny\myapp\myapp\data\db" }, systemLog: { destination: "file", path: "c:\Users\Kenny\myapp\myapp\data\log\mongod.log" } }
+2015-04-10T10:37:34.126+0200 I NETWORK  [initandlisten] waiting for connections on port 27017
+2015-04-10T10:37:57.362+0200 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:36914 #1 (1 connection now open)
+2015-04-10T10:37:57.362+0200 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:36915 #2 (2 connections now open)
+2015-04-10T10:37:57.363+0200 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:36916 #3 (3 connections now open)
+2015-04-10T10:37:57.363+0200 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:36917 #4 (4 connections now open)
+2015-04-10T10:37:57.363+0200 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:36918 #5 (5 connections now open)

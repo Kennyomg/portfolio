@@ -1,0 +1,39 @@
+2015-04-11T00:55:38.889+0200 I CONTROL  Hotfix KB2731284 or later update is not installed, will zero-out data files
+2015-04-11T00:55:38.910+0200 I CONTROL  Trying to start Windows service 'MongoDB'
+2015-04-11T00:55:38.911+0200 I STORAGE  Service running
+2015-04-11T00:55:38.954+0200 W -        [initandlisten] Detected unclean shutdown - c:\Users\Kenny\myapp\myapp\data\db\mongod.lock is not empty.
+2015-04-11T00:55:39.185+0200 I JOURNAL  [initandlisten] journal dir=c:\Users\Kenny\myapp\myapp\data\db\journal
+2015-04-11T00:55:39.310+0200 I JOURNAL  [initandlisten] recover begin
+2015-04-11T00:55:39.326+0200 I JOURNAL  [initandlisten] recover lsn: 0
+2015-04-11T00:55:39.326+0200 I JOURNAL  [initandlisten] recover c:\Users\Kenny\myapp\myapp\data\db\journal\j._0
+2015-04-11T00:55:39.948+0200 I JOURNAL  [initandlisten] recover cleaning up
+2015-04-11T00:55:39.948+0200 I JOURNAL  [initandlisten] removeJournalFiles
+2015-04-11T00:55:39.949+0200 I JOURNAL  [initandlisten] recover done
+2015-04-11T00:55:40.077+0200 I JOURNAL  [durability] Durability thread started
+2015-04-11T00:55:40.077+0200 I JOURNAL  [journal writer] Journal writer thread started
+2015-04-11T00:55:40.201+0200 I CONTROL  [initandlisten] MongoDB starting : pid=3664 port=27017 dbpath=c:\Users\Kenny\myapp\myapp\data\db 64-bit host=Kenny-Laptop
+2015-04-11T00:55:40.201+0200 I CONTROL  [initandlisten] targetMinOS: Windows 7/Windows Server 2008 R2
+2015-04-11T00:55:40.201+0200 I CONTROL  [initandlisten] db version v3.0.2
+2015-04-11T00:55:40.202+0200 I CONTROL  [initandlisten] git version: 6201872043ecbbc0a4cc169b5482dcf385fc464f
+2015-04-11T00:55:40.202+0200 I CONTROL  [initandlisten] OpenSSL version: OpenSSL 1.0.1m-fips 19 Mar 2015
+2015-04-11T00:55:40.202+0200 I CONTROL  [initandlisten] build info: windows sys.getwindowsversion(major=6, minor=1, build=7601, platform=2, service_pack='Service Pack 1') BOOST_LIB_VERSION=1_49
+2015-04-11T00:55:40.202+0200 I CONTROL  [initandlisten] allocator: system
+2015-04-11T00:55:40.202+0200 I CONTROL  [initandlisten] options: { config: "C:\Program Files\MongoDB\Server\3.0\mongod.cfg", service: true, storage: { dbPath: "c:\Users\Kenny\myapp\myapp\data\db" }, systemLog: { destination: "file", path: "c:\Users\Kenny\myapp\myapp\data\log\mongod.log" } }
+2015-04-11T00:55:47.195+0200 I NETWORK  [initandlisten] waiting for connections on port 27017
+2015-04-11T03:30:34.020+0200 I CONTROL  [serviceShutdown] got SERVICE_CONTROL_SHUTDOWN request from Windows Service Control Manager, will terminate after current cmd ends
+2015-04-11T03:30:34.029+0200 I CONTROL  [initandlisten] now exiting
+2015-04-11T03:30:34.029+0200 I NETWORK  [initandlisten] shutdown: going to close listening sockets...
+2015-04-11T03:30:34.029+0200 I NETWORK  [initandlisten] closing listening socket: 424
+2015-04-11T03:30:34.029+0200 I NETWORK  [initandlisten] shutdown: going to flush diaglog...
+2015-04-11T03:30:34.029+0200 I NETWORK  [initandlisten] shutdown: going to close sockets...
+2015-04-11T03:30:34.029+0200 I STORAGE  [initandlisten] shutdown: waiting for fs preallocator...
+2015-04-11T03:30:34.029+0200 I STORAGE  [initandlisten] shutdown: final commit...
+2015-04-11T03:30:34.650+0200 I JOURNAL  [initandlisten] journalCleanup...
+2015-04-11T03:30:34.650+0200 I JOURNAL  [initandlisten] removeJournalFiles
+2015-04-11T03:30:34.652+0200 I JOURNAL  [initandlisten] Terminating durability thread ...
+2015-04-11T03:30:34.744+0200 I JOURNAL  [journal writer] Journal writer thread stopped
+2015-04-11T03:30:34.744+0200 I JOURNAL  [durability] Durability thread stopped
+2015-04-11T03:30:34.744+0200 I STORAGE  [initandlisten] shutdown: closing all files...
+2015-04-11T03:30:34.745+0200 I STORAGE  [initandlisten] closeAllFiles() finished
+2015-04-11T03:30:34.745+0200 I STORAGE  [initandlisten] shutdown: removing fs lock...
+2015-04-11T03:30:34.745+0200 I CONTROL  [initandlisten] dbexit:  rc: 49
