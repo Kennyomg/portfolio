@@ -1,0 +1,20 @@
+a(href='/')= '<<back'
+h2 Software:
+article(ng-controller='SoftwaresController')
+  a(href='softwares/add/') Create New
+  table
+    thead
+      tr
+        th Title
+        th Description
+        th Updated At
+        th Created At
+    tbody
+      tr(ng-repeat='software in softwares')
+        td {{software.title}}
+        td {{software.description}}
+        td {{software.updated_at | asDate | date:'shortDate'}}
+        td {{software.created_at | asDate | date:'shortDate'}}
+        td: a(href='games/{{software._id}}') More
+        td: a(href='games/edit/{{software._id}}') Edit
+        td: button(ng-click='delete()') Delete

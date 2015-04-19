@@ -25,6 +25,7 @@ body {
 
 article, section, aside, hgroup, nav, header, footer, figure, figcaption {
   display: block;
+  color:white;
 }
 
 a {
@@ -78,7 +79,7 @@ nav li:hover {
 }
 
 #sidebar {
-  padding: 0px 100px;
+  padding: 0px 5%;
   height:75%;
   width:20%;
   position: fixed; 

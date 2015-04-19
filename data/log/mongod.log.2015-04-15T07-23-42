@@ -1,0 +1,25 @@
+2015-04-14T01:51:49.870+0200 I CONTROL  Hotfix KB2731284 or later update is not installed, will zero-out data files
+2015-04-14T01:51:49.997+0200 I CONTROL  Trying to start Windows service 'MongoDB'
+2015-04-14T01:51:49.999+0200 I STORAGE  Service running
+2015-04-14T01:51:51.182+0200 W -        [initandlisten] Detected unclean shutdown - c:\Users\Kenny\myapp\myapp\data\db\mongod.lock is not empty.
+2015-04-14T01:51:51.946+0200 I JOURNAL  [initandlisten] journal dir=c:\Users\Kenny\myapp\myapp\data\db\journal
+2015-04-14T01:51:52.263+0200 I JOURNAL  [initandlisten] recover begin
+2015-04-14T01:51:52.263+0200 I JOURNAL  [initandlisten] info no lsn file in journal/ directory
+2015-04-14T01:51:52.264+0200 I JOURNAL  [initandlisten] recover lsn: 0
+2015-04-14T01:51:52.264+0200 I JOURNAL  [initandlisten] recover c:\Users\Kenny\myapp\myapp\data\db\journal\j._0
+2015-04-14T01:51:54.008+0200 I JOURNAL  [initandlisten] recover cleaning up
+2015-04-14T01:51:54.009+0200 I JOURNAL  [initandlisten] removeJournalFiles
+2015-04-14T01:51:54.052+0200 I JOURNAL  [initandlisten] recover done
+2015-04-14T01:51:58.082+0200 I JOURNAL  [initandlisten] preallocateIsFaster=true 14.22
+2015-04-14T01:51:59.599+0200 I JOURNAL  [initandlisten] preallocateIsFaster check took 5.545 secs
+2015-04-14T01:51:59.601+0200 I JOURNAL  [durability] Durability thread started
+2015-04-14T01:51:59.603+0200 I JOURNAL  [journal writer] Journal writer thread started
+2015-04-14T01:51:59.879+0200 I CONTROL  [initandlisten] MongoDB starting : pid=4444 port=27017 dbpath=c:\Users\Kenny\myapp\myapp\data\db 64-bit host=Kenny-Laptop
+2015-04-14T01:51:59.879+0200 I CONTROL  [initandlisten] targetMinOS: Windows 7/Windows Server 2008 R2
+2015-04-14T01:51:59.879+0200 I CONTROL  [initandlisten] db version v3.0.2
+2015-04-14T01:51:59.879+0200 I CONTROL  [initandlisten] git version: 6201872043ecbbc0a4cc169b5482dcf385fc464f
+2015-04-14T01:51:59.879+0200 I CONTROL  [initandlisten] OpenSSL version: OpenSSL 1.0.1m-fips 19 Mar 2015
+2015-04-14T01:51:59.879+0200 I CONTROL  [initandlisten] build info: windows sys.getwindowsversion(major=6, minor=1, build=7601, platform=2, service_pack='Service Pack 1') BOOST_LIB_VERSION=1_49
+2015-04-14T01:51:59.879+0200 I CONTROL  [initandlisten] allocator: system
+2015-04-14T01:51:59.879+0200 I CONTROL  [initandlisten] options: { config: "C:\Program Files\MongoDB\Server\3.0\mongod.cfg", service: true, storage: { dbPath: "c:\Users\Kenny\myapp\myapp\data\db" }, systemLog: { destination: "file", path: "c:\Users\Kenny\myapp\myapp\data\log\mongod.log" } }
+2015-04-14T01:52:34.961+0200 I NETWORK  [initandlisten] waiting for connections on port 27017

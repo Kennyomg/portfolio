@@ -1,0 +1,8 @@
+a(href='websites')= '<<back'
+article(ng-controller='WebsitesController')
+  h2 Add new website
+  label(for='title') Title:
+  input(type='text', ng-model='websiteTitle', name='title')
+  p Description
+  textarea(ng-model='websiteDesc', cols='50', rows='15')
+  button(ng-click='save()') Create

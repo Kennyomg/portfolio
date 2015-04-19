@@ -1,0 +1,20 @@
+a(href='/')= '<<back'
+h2 Games:
+article(ng-controller='GamesController')
+  a(href='games/add/') Create New
+  table
+    thead
+      tr
+        th: a(href="javascript:void(0);" ng-click="predicate = 'title'; reverse=!reverse") Title
+        th: a(href="javascript:void(0);" ng-click="predicate = 'description'; reverse=!reverse") Description
+        th: a(href="javascript:void(0);" ng-click="predicate = 'updated_at'; reverse=!reverse") Updated At
+        th: a(href="javascript:void(0);" ng-click="predicate = 'created_at'; reverse=!reverse") Created At
+    tbody
+      tr(ng-repeat='game in games | orderBy:predicate:reverse')
+        td {{game.title | cut:true:30}}
+        td {{game.description | cut:true:30}}
+        td {{game.updated_at | asDate | date:'shortDate'}}
+        td {{game.created_at | asDate | date:'shortDate'}}
+        td: a(href='games/{{game._id}}') More
+        td: a(href='games/edit/{{game._id}}') Edit
+        td: button(ng-click='delete({{game._id}})') Delete

@@ -1,0 +1,5 @@
+a(href='games')= '<<back'
+article(ng-controller='GamesController')
+  h2 {{game.title}}
+  span Created: {{game.created_at | asDate | date:'shortDate'}} Last updated: {{game.updated_at | asDate | date:'shortDate'}}
+  p {{game.description}}

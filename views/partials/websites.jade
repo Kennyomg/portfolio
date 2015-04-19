@@ -1,0 +1,20 @@
+a(href='/')= '<<back'
+h2 Websites:
+article(ng-controller='WebsitesController')
+  a(href='websites/add/') Create New
+  table
+    thead
+      tr
+        th Title
+        th Description
+        th Updated At
+        th Created At
+    tbody
+      tr(ng-repeat='website in websites')
+        td {{website.title}}
+        td {{website.description}}
+        td {{website.updated_at | asDate | date:'shortDate'}}
+        td {{website.created_at | asDate | date:'shortDate'}}
+        td: a(href='websites/{{website._id}}') More
+        td: a(href='websites/edit/{{website._id}}') Edit
+        td: button(ng-click='delete()') Delete

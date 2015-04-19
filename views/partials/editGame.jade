@@ -1,0 +1,8 @@
+a(href='games')= '<<back'
+article(ng-controller='GamesController')
+  h2 Edit {{game.title}}
+  label(for='title') Title: 
+  input(ng-model='gameTitle', name='title', value='{{game.title}}')
+  p Body:
+  textarea(ng-model='gameDesc', cols='50', rows='15') {{game.description}}
+  button(ng-click='update()') Edit Game

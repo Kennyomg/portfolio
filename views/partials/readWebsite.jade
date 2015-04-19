@@ -1,0 +1,5 @@
+a(href='websites')= '<<back'
+article(ng-controller='WebsitesController')
+  h2 {{website.title}}
+  span Created: {{website.created_at | asDate | date:'shortDate'}} Last updated: {{website.updated_at | asDate | date:'shortDate'}}
+  p {{website.description}}

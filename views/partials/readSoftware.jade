@@ -1,0 +1,5 @@
+a(href='softwares')= '<<back'
+article(ng-controller='SoftwaresController')
+  h2 {{software.title}}
+  span Created: {{software.created_at | asDate | date:'shortDate'}} Last updated: {{software.updated_at | asDate | date:'shortDate'}}
+  p {{software.description}}

@@ -1,0 +1,8 @@
+a(href='softwares')= '<<back'
+article(ng-controller='SoftwaresController')
+  h2 Add new software
+  label(for='title') Title:
+  input(type='text', ng-model='softwareTitle', name='title')
+  p Description
+  textarea(ng-model='softwareDesc', cols='50', rows='15')
+  button(ng-click='save()') Create

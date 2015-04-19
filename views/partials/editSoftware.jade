@@ -1,0 +1,8 @@
+a(href='softwares')= '<<back'
+article(ng-controller='SoftwaresController')
+  h2 Edit {{software.title}}
+  label(for='title') Title: 
+  input(ng-model='softwareTitle', name='title')
+  p Body:
+  textarea(ng-model='softwareDesc', cols='50', rows='15')
+  button(ng-click='update()') Edit Game

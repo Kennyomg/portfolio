@@ -1,0 +1,34 @@
+2015-04-19T03:43:33.751+0200 I CONTROL  Hotfix KB2731284 or later update is not installed, will zero-out data files
+2015-04-19T03:43:34.109+0200 I CONTROL  Trying to start Windows service 'MongoDB'
+2015-04-19T03:43:34.110+0200 I STORAGE  Service running
+2015-04-19T03:43:34.760+0200 I JOURNAL  [initandlisten] journal dir=c:\Users\Kenny\myapp\myapp\data\db\journal
+2015-04-19T03:43:34.780+0200 I JOURNAL  [initandlisten] recover : no journal files present, no recovery needed
+2015-04-19T03:43:35.701+0200 I JOURNAL  [initandlisten] preallocateIsFaster=true 5.28
+2015-04-19T03:43:37.179+0200 I JOURNAL  [durability] Durability thread started
+2015-04-19T03:43:37.209+0200 I JOURNAL  [journal writer] Journal writer thread started
+2015-04-19T03:43:37.326+0200 I CONTROL  [initandlisten] MongoDB starting : pid=3520 port=27017 dbpath=c:\Users\Kenny\myapp\myapp\data\db 64-bit host=Kenny-Laptop
+2015-04-19T03:43:37.326+0200 I CONTROL  [initandlisten] targetMinOS: Windows 7/Windows Server 2008 R2
+2015-04-19T03:43:37.327+0200 I CONTROL  [initandlisten] db version v3.0.2
+2015-04-19T03:43:37.327+0200 I CONTROL  [initandlisten] git version: 6201872043ecbbc0a4cc169b5482dcf385fc464f
+2015-04-19T03:43:37.327+0200 I CONTROL  [initandlisten] OpenSSL version: OpenSSL 1.0.1m-fips 19 Mar 2015
+2015-04-19T03:43:37.327+0200 I CONTROL  [initandlisten] build info: windows sys.getwindowsversion(major=6, minor=1, build=7601, platform=2, service_pack='Service Pack 1') BOOST_LIB_VERSION=1_49
+2015-04-19T03:43:37.327+0200 I CONTROL  [initandlisten] allocator: system
+2015-04-19T03:43:37.327+0200 I CONTROL  [initandlisten] options: { config: "C:\Program Files\MongoDB\Server\3.0\mongod.cfg", service: true, storage: { dbPath: "c:\Users\Kenny\myapp\myapp\data\db" }, systemLog: { destination: "file", path: "c:\Users\Kenny\myapp\myapp\data\log\mongod.log" } }
+2015-04-19T03:43:51.469+0200 I NETWORK  [initandlisten] waiting for connections on port 27017
+2015-04-19T04:16:39.399+0200 I CONTROL  [serviceShutdown] got SERVICE_CONTROL_SHUTDOWN request from Windows Service Control Manager, will terminate after current cmd ends
+2015-04-19T04:16:39.875+0200 I CONTROL  [initandlisten] now exiting
+2015-04-19T04:16:39.875+0200 I NETWORK  [initandlisten] shutdown: going to close listening sockets...
+2015-04-19T04:16:39.875+0200 I NETWORK  [initandlisten] closing listening socket: 424
+2015-04-19T04:16:39.875+0200 I NETWORK  [initandlisten] shutdown: going to flush diaglog...
+2015-04-19T04:16:39.876+0200 I NETWORK  [initandlisten] shutdown: going to close sockets...
+2015-04-19T04:16:39.876+0200 I STORAGE  [initandlisten] shutdown: waiting for fs preallocator...
+2015-04-19T04:16:39.876+0200 I STORAGE  [initandlisten] shutdown: final commit...
+2015-04-19T04:16:40.956+0200 I JOURNAL  [initandlisten] journalCleanup...
+2015-04-19T04:16:40.964+0200 I JOURNAL  [initandlisten] removeJournalFiles
+2015-04-19T04:16:40.968+0200 I JOURNAL  [initandlisten] Terminating durability thread ...
+2015-04-19T04:16:40.998+0200 I JOURNAL  [journal writer] Journal writer thread stopped
+2015-04-19T04:16:40.998+0200 I JOURNAL  [durability] Durability thread stopped
+2015-04-19T04:16:40.998+0200 I STORAGE  [initandlisten] shutdown: closing all files...
+2015-04-19T04:16:41.262+0200 I STORAGE  [initandlisten] closeAllFiles() finished
+2015-04-19T04:16:41.262+0200 I STORAGE  [initandlisten] shutdown: removing fs lock...
+2015-04-19T04:16:41.263+0200 I CONTROL  [initandlisten] dbexit:  rc: 49

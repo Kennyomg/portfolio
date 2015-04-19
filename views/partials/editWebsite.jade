@@ -1,0 +1,8 @@
+a(href='websites')= '<<back'
+article(ng-controller='WebsitesController')
+  h2 Edit {{website.title}}
+  label(for='title') Title: 
+  input(ng-model='websiteTitle', name='title')
+  p Body:
+  textarea(ng-model='websiteDesc', cols='50', rows='15')
+  button(ng-click='update()') Edit Game
