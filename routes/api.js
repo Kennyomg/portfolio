@@ -1,4 +1,5 @@
 var express = require('express');
+var _ = require('lodash');
 var router = express.Router();
 
 var mongoose = require('mongoose');
@@ -16,7 +17,9 @@ router.get('/games', function(req, res, next) {
 
 /* POST /api/games */
 router.post('/games', function(req, res, next) {
-  Games.create(req.body, function (err, post) {
+  console.log(req.body);
+  console.log(req.files);
+  Games.create(_.extend(req.body, { image_url: req.files.file.path.replace("\\", "/") }), function (err, post) {
     if (err) return next(err);
     res.json(post);
   });

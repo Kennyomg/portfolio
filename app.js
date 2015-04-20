@@ -1,4 +1,5 @@
 var express = require('express');
+var multer  = require('multer')
 var fs = require('fs');
 var path = require('path');
 var favicon = require('serve-favicon');
@@ -32,6 +33,18 @@ app.use(logger('dev'));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(cookieParser());
+app.use(multer({ 
+  dest: './public/images/uploads/',rename: function (fieldname, filename) {
+    return filename+Date.now();
+  },
+onFileUploadStart: function (file) {
+  console.log(file.originalname + ' is starting ...')
+},
+onFileUploadComplete: function (file) {
+  console.log(file.fieldname + ' uploaded to  ' + file.path)
+  done=true;
+}
+}));
 
 var options = {
   maxAge: '1d'
