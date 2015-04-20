@@ -14,7 +14,7 @@ angular.module('myApp.controllers', []).
   controller('GamesController', ['$scope', '$upload', '$routeParams', 'Games', function ($scope, $upload, $routeParams, Games) {
     if(!$routeParams.id){
       $scope.games = Games.query();
-      $scope.predicate = 'updated_at';
+      $scope.predicate = '-updated_at';
     } else {
       $scope.game = Games.get({id:$routeParams.id});
     }

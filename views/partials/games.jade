@@ -5,16 +5,16 @@ article(ng-controller='GamesController')
   table
     thead
       tr
+        th: a(href="javascript:void(0);" ng-click="predicate = 'image_url'; reverse=!reverse") Image
         th: a(href="javascript:void(0);" ng-click="predicate = 'title'; reverse=!reverse") Title
         th: a(href="javascript:void(0);" ng-click="predicate = 'description'; reverse=!reverse") Description
-        th: a(href="javascript:void(0);" ng-click="predicate = 'image_url'; reverse=!reverse") Image Url
         th: a(href="javascript:void(0);" ng-click="predicate = 'updated_at'; reverse=!reverse") Updated At
         th: a(href="javascript:void(0);" ng-click="predicate = 'created_at'; reverse=!reverse") Created At
     tbody
       tr(ng-repeat='game in games | orderBy:predicate:reverse')
+        td: img(src='{{game.image_url}}', class='list-img')
         td {{game.title | cut:true:30}}
         td {{game.description | cut:true:30}}
-        td {{game.image_url}}
         td {{game.updated_at | asDate | date:'shortDate'}}
         td {{game.created_at | asDate | date:'shortDate'}}
         td: a(href='games/{{game._id}}') More

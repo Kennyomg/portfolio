@@ -19,7 +19,7 @@ router.get('/games', function(req, res, next) {
 router.post('/games', function(req, res, next) {
   console.log(req.body);
   console.log(req.files);
-  Games.create(_.extend(req.body, { image_url: req.files.file.path.replace("\\", "/") }), function (err, post) {
+  Games.create(_.extend(req.body, { image_url: req.files.file.path.replace('public\\', '') }), function (err, post) {
     if (err) return next(err);
     res.json(post);
   });

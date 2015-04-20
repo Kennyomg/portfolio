@@ -78,6 +78,12 @@ nav li:hover {
   background-color: rgba(0, 0, 0, 0.8);
 }
 
+.list-img {
+  max-height: 100px;
+  height:100px;
+  width:auto;
+}
+
 #sidebar {
   padding: 0px 5%;
   height:75%;
